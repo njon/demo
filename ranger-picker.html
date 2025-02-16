@@ -1,0 +1,14 @@
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		window.noUiSlider && (noUiSlider.create(document.getElementById('range-simple'), {
+			start: 20,
+			connect: [true, false],
+			step: 10,
+			range: {
+				min: 0,
+				max: 100
+			}
+		}));
+	});
+</script>
+<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.9, 1);"></div></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="90.0" aria-valuenow="0.0" aria-valuetext="0.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-10%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="90.0" aria-valuetext="90.00"><div class="noUi-touch-area"></div></div></div></div></div>
