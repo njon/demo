@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
         workingHoursContainer.innerHTML += `
                     <div class="clear">
                     
-                    <div class="working-hours"><input class="form-check-input" type="checkbox" checked> ${day} working hours:
+                    <div class="working-hours"><input class="form-check-input" type="checkbox" checked><span class="time-text"> ${day} working hours:
                        <span class="start-hour-${day.toLowerCase()}">10</span>:<span class="start-minute-${day.toLowerCase()}"></span>
-                        - <span class="end-hour-${day.toLowerCase()}">22</span>:<span class="end-minute-${day.toLowerCase()}"></span></div>
+                        - <span class="end-hour-${day.toLowerCase()}">22</span>:<span class="end-minute-${day.toLowerCase()}"></span></span></div>
                     <div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="${dayId}"></div>
                        
                     </div>
