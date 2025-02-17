@@ -1,41 +1,27 @@
-ul.nav.nav-tabs.card-header-tabs li.nav-item {
-    background: #f6f8fb;
-}
-ul.nav.nav-tabs.card-header-tabs li.nav-item a.nav-link.active {
-    background: white;
-    border-bottom: 1px solid #ffffff !important;
-}
-
 ul.nav.nav-tabs.card-header-tabs {
     position: relative;
     z-index: 1;
     margin-bottom: 0;
+    border: 0 !important;
 }
 .nav-tabs .nav-link:hover {
     border-color: transparent;
-    border-bottom-color: #e5e8ec;
-    background: #eaeaea;
 }
-.nav-tabs .nav-link.active:hover {
-    background: #eaeaea;
-    border: 1px solid #e5e8ec;
-}
+
 .noUi-target { clear: both; float: left; width: 100%; margin: 0; z-index: 9999; } .working-hours {clear: both;display: block;width: 100%;margin: 0;}
 .clear {clear: both;float: left;width: 100%;display: block;margin-bottom: 15px;}
 ul.nav.nav-tabs.card-header-tabs {
     padding: 0;
-    background: white;
-    border: 0;
+    background: transparent;
 }
-
-.card-header {
-    border: 0;
-}
-
 a.nav-link.active {
     border: 1px solid grey !important;
     border-radius: 5px !important;
+    background: white !important;
 }
 a.nav-link {
     margin-right: 10px;
+}
+.card-header.no-border {
+    border: 0;
 }

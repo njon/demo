@@ -14,6 +14,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 	<title>Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
 	<!-- CSS files -->
+	<link href="./dist/css/custom.css" rel="stylesheet"/>
+
 <link href="./dist/css/tabler.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-flags.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-socials.min.css?1738096684" rel="stylesheet"/>
@@ -683,7 +685,7 @@ Sponsor
 			<div class="card-body">
 			<form>
 				<div class="tab-content">
-					<div class="card-header">
+					<div class="card-header no-border">
 						<ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
 							<li class="nav-item" role="presentation">
 								<a href="#tabs-home-3" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab">
@@ -702,12 +704,9 @@ Sponsor
 							</li>
 						</ul>
 					</div>
-						<br>
-						
-						<br>
-					<div class="tab-pane active show" id="tabs-home-3" role="tabpanel">
-						<h2>Business information</h2>
 
+					<div class="tab-pane active show" id="tabs-home-3" role="tabpanel">
+						<h2 class="my-5 col-md-12">Business information</h2>
 						<div class="col-md-12">
 								<div class="mb-3">
 									<label class="form-label">Business Name</label>
@@ -764,85 +763,80 @@ Sponsor
 							</div>
 							<input type="text" id="working-hours-json">
 					</div>
-				</div>
-				
 					<div class="tab-pane" id="tabs-profile-3" role="tabpanel">
-						<br>
-						<h2>Business Hours</h2>
-						<br>
+						<h2 class="my-5 col-md-12">Working hours</h2>
 						<div class="col-lg-6">
-							<div class="mb-3">
-								<div class="form-label">Checkboxes</div>
-							</div>
+
 							<div id="working-hours">
 
-							
-<div class="clear">
+															
+								<div class="clear">
 
-<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Monday working hours:
-   <span class="start-hour-monday">10</span>:<span class="start-minute-monday">00</span>
-	- <span class="end-hour-monday">17</span>:<span class="end-minute-monday">10</span></div>
-<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-monday"><div id="range-connect-monday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(41.6667%, 0px) scale(0.298611, 1);"></div></div><div class="noUi-origin" style="transform: translate(-58.3333%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="600.0" aria-valuetext="600.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="600.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
-   
-</div>
+								<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Monday working hours:
+								<span class="start-hour-monday">10</span>:<span class="start-minute-monday">00</span>
+									- <span class="end-hour-monday">17</span>:<span class="end-minute-monday">10</span></div>
+								<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-monday"><div id="range-connect-monday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(41.6667%, 0px) scale(0.298611, 1);"></div></div><div class="noUi-origin" style="transform: translate(-58.3333%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="600.0" aria-valuetext="600.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="600.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+								
+								</div>
 
-<div class="clear">
+								<div class="clear">
 
-<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Tuesday working hours:
-   <span class="start-hour-tuesday">10</span>:<span class="start-minute-tuesday">00</span>
-	- <span class="end-hour-tuesday">17</span>:<span class="end-minute-tuesday">10</span></div>
-<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-tuesday"><div id="range-connect-tuesday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(41.6667%, 0px) scale(0.298611, 1);"></div></div><div class="noUi-origin" style="transform: translate(-58.3333%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="600.0" aria-valuetext="600.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="600.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
-   
-</div>
+								<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Tuesday working hours:
+								<span class="start-hour-tuesday">10</span>:<span class="start-minute-tuesday">00</span>
+									- <span class="end-hour-tuesday">17</span>:<span class="end-minute-tuesday">10</span></div>
+								<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-tuesday"><div id="range-connect-tuesday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(41.6667%, 0px) scale(0.298611, 1);"></div></div><div class="noUi-origin" style="transform: translate(-58.3333%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="600.0" aria-valuetext="600.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="600.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+								
+								</div>
 
-<div class="clear">
+								<div class="clear">
 
-<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Wednesday working hours:
-   <span class="start-hour-wednesday">13</span>:<span class="start-minute-wednesday">35</span>
-	- <span class="end-hour-wednesday">17</span>:<span class="end-minute-wednesday">10</span></div>
-<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-wednesday"><div id="range-connect-wednesday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
-   
-</div>
+								<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Wednesday working hours:
+								<span class="start-hour-wednesday">13</span>:<span class="start-minute-wednesday">35</span>
+									- <span class="end-hour-wednesday">17</span>:<span class="end-minute-wednesday">10</span></div>
+								<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-wednesday"><div id="range-connect-wednesday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+								
+								</div>
 
-<div class="clear">
+								<div class="clear">
 
-<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Thursday working hours:
-   <span class="start-hour-thursday">13</span>:<span class="start-minute-thursday">35</span>
-	- <span class="end-hour-thursday">17</span>:<span class="end-minute-thursday">10</span></div>
-<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-thursday"><div id="range-connect-thursday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
-   
-</div>
+								<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Thursday working hours:
+								<span class="start-hour-thursday">13</span>:<span class="start-minute-thursday">35</span>
+									- <span class="end-hour-thursday">17</span>:<span class="end-minute-thursday">10</span></div>
+								<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-thursday"><div id="range-connect-thursday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+								
+								</div>
 
-<div class="clear">
+								<div class="clear">
 
-<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Friday working hours:
-   <span class="start-hour-friday">13</span>:<span class="start-minute-friday">35</span>
-	- <span class="end-hour-friday">17</span>:<span class="end-minute-friday">10</span></div>
-<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-friday"><div id="range-connect-friday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
-   
-</div>
+								<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Friday working hours:
+								<span class="start-hour-friday">13</span>:<span class="start-minute-friday">35</span>
+									- <span class="end-hour-friday">17</span>:<span class="end-minute-friday">10</span></div>
+								<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-friday"><div id="range-connect-friday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+								
+								</div>
 
-<div class="clear">
+								<div class="clear">
 
-<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Saturday working hours:
-   <span class="start-hour-saturday">13</span>:<span class="start-minute-saturday">35</span>
-	- <span class="end-hour-saturday">17</span>:<span class="end-minute-saturday">10</span></div>
-<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-saturday"><div id="range-connect-saturday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
-   
-</div>
+								<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Saturday working hours:
+								<span class="start-hour-saturday">13</span>:<span class="start-minute-saturday">35</span>
+									- <span class="end-hour-saturday">17</span>:<span class="end-minute-saturday">10</span></div>
+								<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-saturday"><div id="range-connect-saturday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+								
+								</div>
 
-<div class="clear">
+								<div class="clear">
 
-<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Sunday working hours:
-   <span class="start-hour-sunday">13</span>:<span class="start-minute-sunday">35</span>
-	- <span class="end-hour-sunday">17</span>:<span class="end-minute-sunday">10</span></div>
-<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-sunday"><div id="range-connect-sunday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
-   
-</div>
-</div>
+								<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Sunday working hours:
+								<span class="start-hour-sunday">13</span>:<span class="start-minute-sunday">35</span>
+									- <span class="end-hour-sunday">17</span>:<span class="end-minute-sunday">10</span></div>
+								<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-sunday"><div id="range-connect-sunday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+								
+								</div>
+								</div>
 						</div>
 
 					</div>
+
 				</div>
 				</form>
 		</div>
