@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html lang="en"><head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -11,6 +12,7 @@
 	<link href="./dist/css/tabler-vendors.min.css?1738096685" rel="stylesheet">
 	<link href="./dist/css/tabler-marketing.min.css?1738096685" rel="stylesheet">
 	<link href="./dist/css/demo.min.css?1738096685" rel="stylesheet">
+	<link href="./dist/libs/dropzone/dist/dropzone.css?1738448791" rel="stylesheet">
 	<style>
 		@import url('https://rsms.me/inter/inter.css');
 	</style>
@@ -307,88 +309,185 @@
 											<div class="card-body">
 												<h3 class="card-title">Add New Service</h3>
 												<div class="row row-cards">
-													<div class="col-md-12">
-														<div class="mb-3">
-															<label class="form-label">Title</label>
-															<input type="text" class="form-control" placeholder="Enter service title">
+													<div class="col-md-8">
+														<div class="row">
+														<div class="col-md-12">
+															<div class="mb-3">
+																<label class="form-label">Title</label>
+																<input type="text" class="form-control" placeholder="Enter service title">
+															</div>
 														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="mb-3">
-															<label class="form-label">Description</label>
-															<textarea rows="5" class="form-control" placeholder="Enter service description"></textarea>
+														<div class="col-md-12">
+															<div class="mb-3">
+																<label class="form-label">Description</label>
+																<textarea rows="5" class="form-control"id="tinymce-mytextarea" id="tinymce-mytextarea" placeholder="Enter service description"></textarea>
+															</div>
 														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="mb-3">
-															<label class="form-label">Main Image</label>
-															<input type="file" class="form-control">
+														<!-- <div class="col-md-12">
+															<div class="mb-3">
+																<label class="form-label">Additional Information</label>
+																<textarea rows="5" class="form-control" placeholder="Enter any additional information"></textarea>
+															</div>
+														</div> -->
+														<div class="col-md-12">
+															<div class="mb-3">
+																<label class="form-label">What's Not Included (Optional)</label>
+																<textarea rows="3" class="form-control" placeholder="Enter what's not included"></textarea>
+															</div>
 														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="mb-3">
-															<label class="form-label">Additional Images</label>
-															<input type="file" class="form-control" multiple>
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="mb-3">
-															<label class="form-label">Categories</label>
-															<select class="form-control form-select" multiple>
-																<option value="category1">Category 1</option>
-																<option value="category2">Category 2</option>
-																<option value="category3">Category 3</option>
+														<div class="col-md-6 mb-3">
+															<label class="form-label">Stores</label>
+															<select type="text" class="form-select" placeholder="Select stores" id="select-tags" value="" multiple>
+																			<option value="HTML">HTML</option>
+																			<option value="JavaScript">JavaScript</option>
+																			<option value="CSS">CSS</option>
+																			<option value="jQuery">jQuery</option>
+																			<option value="Bootstrap">Bootstrap</option>
+																			<option value="Ruby">Ruby</option>
+																			<option value="Python">Python</option>
 															</select>
+															<small class="form-hint">
+																Select stores where this service is available
+															</small>
+														
+															<script>
+																document.addEventListener("DOMContentLoaded", function () {
+																var el;
+																window.TomSelect && (new TomSelect(el = document.getElementById('select-tags'), {
+																	copyClassesToDropdown: false,
+																	dropdownParent: 'body',
+																	controlInput: '<input>',
+																	render:{
+																		item: function(data,escape) {
+																			if( data.customProperties ){
+																				return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+																			}
+																			return '<div>' + escape(data.text) + '</div>';
+																		},
+																		option: function(data,escape){
+																			if( data.customProperties ){
+																				return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+																			}
+																			return '<div>' + escape(data.text) + '</div>';
+																		},
+																	},
+																}));
+															});
+															</script>
+														</div> 
+														<div class="col-md-6 mb-3">
+															<label class="form-label">Categories</label>
+														<select type="text" class="form-select" placeholder="Select categories" id="select-categories" value="" multiple>
+																			<option value="HTML">HTML</option>
+																			<option value="JavaScript">JavaScript</option>
+																			<option value="CSS">CSS</option>
+																			<option value="jQuery">jQuery</option>
+																			<option value="Bootstrap">Bootstrap</option>
+																			<option value="Ruby">Ruby</option>
+																			<option value="Python">Python</option>
+														</select>
+														<small class="form-hint">
+															Select most suitable categories for this service
+														</small>
+														
+															<script>
+																document.addEventListener("DOMContentLoaded", function () {
+																var el;
+																window.TomSelect && (new TomSelect(el = document.getElementById('select-categories'), {
+																	copyClassesToDropdown: false,
+																	dropdownParent: 'body',
+																	controlInput: '<input>',
+																	render:{
+																		item: function(data,escape) {
+																			if( data.customProperties ){
+																				return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+																			}
+																			return '<div>' + escape(data.text) + '</div>';
+																		},
+																		option: function(data,escape){
+																			if( data.customProperties ){
+																				return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+																			}
+																			return '<div>' + escape(data.text) + '</div>';
+																		},
+																	},
+																}));
+															});
+															</script>
 														</div>
+														<div class="col-md-4">
+															<div class="mb-3">
+																<label class="form-label">Price</label>
+																<input type="number" class="form-control" placeholder="Enter price">
+															</div>
+														</div>
+													
+														<div class="col-md-4">
+															<div class="mb-3">
+																<label class="form-label">Duration</label>
+																<input type="text" class="form-control" placeholder="e.g., 2 hours, 1 day">
+															</div>
+														</div>
+														<div class="col-md-4">
+															<div class="mb-3">
+																<label class="form-label">People</label>
+																<input type="number" class="form-control" placeholder="Number of people">
+															</div>
+														</div>
+														<br><br>
+													</div>
+														<div class="card-footer text-end">
+															<button type="submit" class="btn btn-primary">Add Service</button>
+														</div>
+													</div>
+										</form>
+									
+													<div class="col-md-4">
+														<div class="row">
+															<div class="col-md-6">
+
+														<h3 class="card-title">Main image for service</h3>
+														<form class="dropzone" id="dropzone-main" action="./" autocomplete="off" novalidate>
+															<div class="fallback">
+																<input name="file" type="file"  />
+															</div>
+															<div class="dz-message">
+																<h3 class="dropzone-msg-title">Upload your main image for service</h3>
+																<span class="dropzone-msg-desc">Click this box or drag image</span>
+															</div>
+														</form>
+														<script>
+														document.addEventListener("DOMContentLoaded", function() {
+															new Dropzone("#dropzone-main")
+														})
+														</script>
+														<br>
+														<br>
 													</div>
 													<div class="col-md-6">
-														<div class="mb-3">
-															<label class="form-label">Price</label>
-															<input type="number" class="form-control" placeholder="Enter price">
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="mb-3">
-															<label class="form-label">Working Hours/Days</label>
-															<input type="text" class="form-control" placeholder="e.g., 9 AM - 5 PM, Mon-Fri">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="mb-3">
-															<label class="form-label">City / Cities</label>
-															<input type="text" class="form-control" placeholder="Enter city or cities">
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="mb-3">
-															<label class="form-label">Duration</label>
-															<input type="text" class="form-control" placeholder="e.g., 2 hours, 1 day">
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="mb-3">
-															<label class="form-label">People</label>
-															<input type="number" class="form-control" placeholder="Number of people">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="mb-3">
-															<label class="form-label">Additional Information</label>
-															<textarea rows="5" class="form-control" placeholder="Enter any additional information"></textarea>
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="mb-3">
-															<label class="form-label">What's Not Included (Optional)</label>
-															<textarea rows="3" class="form-control" placeholder="Enter what's not included"></textarea>
-														</div>
+
+														<h3 class="card-title">Extra Images</h3>
+														<form class="dropzone" id="dropzone-extra" action="./" autocomplete="off" novalidate>
+															<div class="fallback">
+																<input name="file" type="file"  />
+															</div>
+															<div class="dz-message"> 
+																<h3 class="dropzone-msg-title">Upload extra images for gallery</h3>
+																<span class="dropzone-msg-desc">Click this box or drag image</span>
+															</div>
+														</form>
+														<script>
+														document.addEventListener("DOMContentLoaded", function() {
+															new Dropzone("#dropzone-extra")
+														})
+														</script>
+																												</div>
+																											</div>
+
 													</div>
 												</div>
 											</div>
-											<div class="card-footer text-end">
-												<button type="submit" class="btn btn-primary">Add Service</button>
-											</div>
-										</form>
+											
 
 									</div>
 
@@ -432,6 +531,36 @@
 	</div>
 </div>
 <!-- Libs JS -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let options = {
+      selector: '#tinymce-mytextarea',
+      height: 300,
+      menubar: false,
+      statusbar: false,
+		license_key: 'gpl',
+      plugins: [
+        'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview', 'anchor',
+        'searchreplace', 'visualblocks', 'code', 'fullscreen',
+        'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | ' +
+        'bold italic backcolor | alignleft aligncenter ' +
+        'alignright alignjustify | bullist numlist outdent indent | ' +
+        'removeformat',
+      content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; }'
+    }
+    if (localStorage.getItem("tablerTheme") === 'dark') {
+      options.skin = 'oxide-dark';
+      options.content_css = 'dark';
+    }
+    tinyMCE.init(options);
+  })
+  </script>
+  <script src="./dist/libs/dropzone/dist/dropzone-min.js?1738448791" defer></script>
+  <script src="./dist/libs/tinymce/tinymce.min.js?1738448791" defer></script>
+  <script src="./dist/libs/tom-select/dist/js/tom-select.base.min.js?1738096684" defer></script>
 <script src="./dist/libs/apexcharts/dist/apexcharts.min.js?1738096685" defer=""></script>
 <script src="./dist/libs/jsvectormap/dist/jsvectormap.min.js?1738096685" defer=""></script>
 <script src="./dist/libs/jsvectormap/dist/maps/world.js?1738096685" defer=""></script>

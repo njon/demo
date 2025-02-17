@@ -22,3 +22,20 @@ ul.nav.nav-tabs.card-header-tabs {
 }
 .noUi-target { clear: both; float: left; width: 100%; margin: 0; z-index: 9999; } .working-hours {clear: both;display: block;width: 100%;margin: 0;}
 .clear {clear: both;float: left;width: 100%;display: block;margin-bottom: 15px;}
+ul.nav.nav-tabs.card-header-tabs {
+    padding: 0;
+    background: white;
+    border: 0;
+}
+
+.card-header {
+    border: 0;
+}
+
+a.nav-link.active {
+    border: 1px solid grey !important;
+    border-radius: 5px !important;
+}
+a.nav-link {
+    margin-right: 10px;
+}

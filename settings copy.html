@@ -679,59 +679,177 @@ Sponsor
 			</div>
 		</div>
 		<div class="col-12 col-md-9 d-flex flex-column">
-<div class="card-body">
-	<h2 class="mb-4">My Account</h2>
+			
+			<div class="card-body">
+			<form>
+				<div class="tab-content">
+					<div class="card-header">
+						<ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a href="#tabs-home-3" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab">
+									<!-- Download SVG icon from http://tabler.io/icons/icon/home -->
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon me-2 icon-2">
+										<path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+										<path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+										<path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+									</svg>
+									Business information</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a href="#tabs-profile-3" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2 icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M12 7v5l3 3"></path></svg>
+									Working Hours</a>
+							</li>
+						</ul>
+					</div>
+						<br>
+						
+						<br>
+					<div class="tab-pane active show" id="tabs-home-3" role="tabpanel">
+						<h2>Business information</h2>
 
-	<h3 class="card-title mt-4 pt-3">Two-Factor Authentication (2FA)</h3>
-	<p class="card-subtitle">Enhance your account security with Two-Factor Authentication. 
-		Use temporary codes in addition to your password for stronger protection.</p>
-	<div>
-<a href="#" class="btn btn-1">
-	Manage 2FA Settings
-</a>
+						<div class="col-md-12">
+								<div class="mb-3">
+									<label class="form-label">Business Name</label>
+									<input type="text" class="form-control" placeholder="Enter business name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<label class="form-label">Phone Number</label>
+									<input type="tel" class="form-control" placeholder="Enter phone number">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<label class="form-label">Email Address</label>
+									<input type="email" class="form-control" placeholder="Enter email address">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<label class="form-label">Business Address</label>
+									<input type="text" class="form-control" placeholder="Enter business address">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<label class="form-label">Description</label>
+									<textarea rows="5" class="form-control" placeholder="Enter business description"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<label class="form-label">Main Image</label>
+									<input type="file" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<label class="form-label">Images</label>
+									<input type="file" class="form-control" multiple="">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<label class="form-label">Website</label>
+									<input type="url" class="form-control" placeholder="Enter website URL">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<label class="form-label">Working Hours</label>
+									<input type="text" class="form-control" placeholder="e.g., 9 AM - 5 PM, Mon-Fri">
+								</div>
+							</div>
+							<input type="text" id="working-hours-json">
+					</div>
+				</div>
+				
+					<div class="tab-pane" id="tabs-profile-3" role="tabpanel">
+						<br>
+						<h2>Business Hours</h2>
+						<br>
+						<div class="col-lg-6">
+							<div class="mb-3">
+								<div class="form-label">Checkboxes</div>
+							</div>
+							<div id="working-hours">
 
+							
+<div class="clear">
 
+<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Monday working hours:
+   <span class="start-hour-monday">10</span>:<span class="start-minute-monday">00</span>
+	- <span class="end-hour-monday">17</span>:<span class="end-minute-monday">10</span></div>
+<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-monday"><div id="range-connect-monday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(41.6667%, 0px) scale(0.298611, 1);"></div></div><div class="noUi-origin" style="transform: translate(-58.3333%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="600.0" aria-valuetext="600.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="600.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+   
+</div>
 
-	</div>
-	<h3 class="card-title mt-4 pt-3">Password</h3>
-	<p class="card-subtitle">You can set a permanent password if you don't want to use temporary login codes.</p>
-	<div>
-<a href="#" class="btn btn-1">
-Set new password
-</a>
-	</div>
+<div class="clear">
 
+<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Tuesday working hours:
+   <span class="start-hour-tuesday">10</span>:<span class="start-minute-tuesday">00</span>
+	- <span class="end-hour-tuesday">17</span>:<span class="end-minute-tuesday">10</span></div>
+<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-tuesday"><div id="range-connect-tuesday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(41.6667%, 0px) scale(0.298611, 1);"></div></div><div class="noUi-origin" style="transform: translate(-58.3333%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="600.0" aria-valuetext="600.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="600.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+   
+</div>
 
+<div class="clear">
 
-<h3 class="card-title mt-4 pt-3">Email notifications</h3>
-<p class="card-subtitle">Get profile activity to your email address. You will be notified of all activities on your account, including successful sales and reviews.</p>
-<div>
-<label class="form-check form-switch form-switch-lg">
-<input class="form-check-input" type="checkbox" checked>
-<span class="form-check-label form-check-label-on">You're currently subscribed</span>
-<span class="form-check-label form-check-label-off">You're
-	currently unsubscribed</span>
-</label>
+<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Wednesday working hours:
+   <span class="start-hour-wednesday">13</span>:<span class="start-minute-wednesday">35</span>
+	- <span class="end-hour-wednesday">17</span>:<span class="end-minute-wednesday">10</span></div>
+<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-wednesday"><div id="range-connect-wednesday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+   
+</div>
 
-<h3 class="card-title mt-4 pt-3">Offline mode</h3>
-<p class="card-subtitle">Making your profile offline means that all your services will not appear on platform and users won't be able to purchase your services.</p>
-<div>
-<label class="form-check form-switch form-switch-lg">
-<input class="form-check-input" type="checkbox" checked>
-<span class="form-check-label form-check-label-on">You're currently online</span>
-<span class="form-check-label form-check-label-off">You're
-	currently offline</span>
-</label>
-	</div>
+<div class="clear">
 
+<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Thursday working hours:
+   <span class="start-hour-thursday">13</span>:<span class="start-minute-thursday">35</span>
+	- <span class="end-hour-thursday">17</span>:<span class="end-minute-thursday">10</span></div>
+<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-thursday"><div id="range-connect-thursday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+   
+</div>
 
-	<h3 class="card-title mt-4 pt-3">Account removal</h3>
-<p class="card-subtitle">Clicking this button will start the account removal process. Your account will be deactivated immediately and permanently deleted after 14 days. You'll receive a cancellation email if you change your mind.</p>
-	<div class="col-6 col-sm-4 col-md-2 col-xl pb-3">
-		<a href="#" class="btn btn-6 btn-danger active w-100">
-		Delete account
-		</a>
+<div class="clear">
+
+<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Friday working hours:
+   <span class="start-hour-friday">13</span>:<span class="start-minute-friday">35</span>
+	- <span class="end-hour-friday">17</span>:<span class="end-minute-friday">10</span></div>
+<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-friday"><div id="range-connect-friday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+   
+</div>
+
+<div class="clear">
+
+<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Saturday working hours:
+   <span class="start-hour-saturday">13</span>:<span class="start-minute-saturday">35</span>
+	- <span class="end-hour-saturday">17</span>:<span class="end-minute-saturday">10</span></div>
+<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-saturday"><div id="range-connect-saturday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+   
+</div>
+
+<div class="clear">
+
+<div class="working-hours"><input class="form-check-input" type="checkbox" checked=""> Sunday working hours:
+   <span class="start-hour-sunday">13</span>:<span class="start-minute-sunday">35</span>
+	- <span class="end-hour-sunday">17</span>:<span class="end-minute-sunday">10</span></div>
+<div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect-sunday"><div id="range-connect-sunday" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(56.5972%, 0px) scale(0.149306, 1);"></div></div><div class="noUi-origin" style="transform: translate(-43.4028%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1030.0" aria-valuenow="815.0" aria-valuetext="815.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-28.4722%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="815.0" aria-valuemax="1440.0" aria-valuenow="1030.0" aria-valuetext="1030.00"><div class="noUi-touch-area"></div></div></div></div></div></div>
+   
+</div>
+</div>
+						</div>
+
+					</div>
+				</div>
+				</form>
 		</div>
+	</div>
+</div>
+		
+
 
 
 </div>
