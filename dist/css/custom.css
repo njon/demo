@@ -25,3 +25,18 @@ a.nav-link {
 .card-header.no-border {
     border: 0;
 }
+.card:hover {
+    box-shadow: 0 0 4px 0px #8b87d4;
+}
+img.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+span.avatar.avatar-xl {
+    width: 100%;
+    height: 264px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+}

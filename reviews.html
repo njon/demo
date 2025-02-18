@@ -374,7 +374,7 @@
             <div class="container-xl">
                 <div class="row g-2 align-items-center">
                     <div class="col">
-                        <h2 class="page-title">Service listing</h2>
+                        <h2 class="page-title">Reviews</h2>
                     </div>
                 </div>
             </div>
@@ -390,103 +390,59 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-header">
-                                            <h3 class="card-title">Sales</h3>
+                                            <h3 class="card-title">Reviews by customers</h3>
                                         </div>
-                                        <!--							<div class="card-body border-bottom py-3">-->
-                                        <!--								<div class="d-flex">-->
-                                        <!--									<div class="text-secondary">-->
-                                        <!--										Show-->
-                                        <!--										<div class="mx-2 d-inline-block">-->
-                                        <!--											<input type="text" class="form-control form-control-sm" value="8" size="3" aria-label="Invoices count">-->
-                                        <!--										</div>-->
-                                        <!--										entries-->
-                                        <!--									</div>-->
-                                        <!--									<div class="ms-auto text-secondary">-->
-                                        <!--										Search:-->
-                                        <!--										<div class="ms-2 d-inline-block">-->
-                                        <!--											<input type="text" class="form-control form-control-sm" aria-label="Search invoice">-->
-                                        <!--										</div>-->
-                                        <!--									</div>-->
-                                        <!--								</div>-->
-                                        <!--							</div>-->
                                         <div class="table-responsive">
                                             <table class="table card-table table-vcenter text-nowrap datatable">
                                                 <thead>
                                                 <tr>
-                                                    <th class="w-1"><input class="form-check-input m-0 align-middle"
-                                                                           type="checkbox"
-                                                                           aria-label="Select all invoices"></th>
-                                                    <th class="w-1">No.
-                                                        <!-- Download SVG icon from http://tabler.io/icons/icon/chevron-up -->
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                             stroke-width="2" stroke-linecap="round"
-                                                             stroke-linejoin="round"
-                                                             class="icon icon-sm icon-thick icon-2">
-                                                            <path d="M6 15l6 -6l6 6"></path>
-                                                        </svg>
-                                                    </th>
-                                                    <th>Service name</th>
-                                                    <th>Price</th>
+                                                    <th class="w-1">No.</th>
+                                                    <th>Service Name</th>
+                                                    <th>Store</th>
+                                                    <th>Review Title</th>
+                                                    <th>Review Text</th>
+                                                    <th>Rating</th>
+                                                    <th>User</th>
                                                     <th>Created</th>
-                                                    <th>Stores</th>
-                                                    <th>Categories</th>
-                                                    <th>Status</th>
                                                     <th></th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 <tr>
+                                                    <td><span class="text-secondary">0001</span></td>
                                                     <td>
-                                                        <input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select massage">
-                                                    </td>
-                                                    <td><span class="text-secondary">MSG0045</span></td>
-                                                    <td>
-                                                        <a href="massage-details.html" class="text-reset" tabindex="-1">
+                                                        <a href="service-details.html" class="text-reset" tabindex="-1">
                                                             Relaxing Aromatherapy
                                                         </a>
-                                                    </td>
-                                                    <td>
-                                                       200 Eur
-                                                    </td>
-                                                    <td>
-                                                        25 Oct 2023
                                                     </td>
                                                     <td>
                                                         <span class="tag me-1">
                                                             Le Massage Kallithea
                                                         </span>
-
-                                                    </td>
-
-                                                    <td>
-                                                        <span class="tag me-1">
-                                                            Massages
-                                                        </span>
-                                                        <span class="tag me-1">
-                                                            For Couples
-                                                        </span>
                                                     </td>
                                                     <td>
-                                                        <span class="badge bg-success me-1"></span> Active
+                                                        Amazing Experience!
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-2" data-bs-toggle="modal" data-bs-target="#id0001">
+                                                            Show review
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        5 stars
+                                                    </td>
+                                                    <td>
+                                                        John Doe
+                                                    </td>
+                                                    <td>
+                                                        26 Oct 2023
                                                     </td>
                                                     <td class="text-end">
-                                                        <span class="dropdown">
-                                                            <button class="btn dropdown-toggle align-text-top"
-                                                                    data-bs-boundary="viewport"
-                                                                    data-bs-toggle="dropdown">Actions</button>
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#">
-                                                                    Edit
-                                                                </a>
-                                                                <a class="dropdown-item text-danger" href="#">
-                                                                    Delete
-                                                                </a>
-                                                            </div>
-                                                        </span>
+                                                        <a href="#" class="btn btn-danger w-100"  data-bs-toggle="modal" data-bs-target="#report-review">
+                                                            Report
+                                                        </a>
                                                     </td>
                                                 </tr>
-
                                                 </tbody>
                                             </table>
                                         </div>
@@ -532,6 +488,46 @@
                     </div>
                 </div>
 
+                <div class="reviews-texts">
+                    <div class="modal modal-blur fade" id="id0001" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                        <h5 class="modal-title">Amazing Experience!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        This massage was absolutely fantastic.  The therapist was skilled and the atmosphere was so relaxing. I highly recommend it!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modal-blur fade" id="report-review" tabindex="-1" role="dialog" aria-hidden="true">
+                    <form>
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                        <h5 class="modal-title">Report review</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-secondary">
+                            You are about to report review. Please report reviews that contain false information, hate speech, or other inappropriate content, such as profanity, personal attacks, or spam. </p>
+                        <textarea class="form-control" name="report-text" rows="6" placeholder="Reason for reporting review"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit Report</button>
+                    </div>
+                </form>
+                            </div>
+                        </div>
+                    </div>
 
                 <footer class="footer footer-transparent d-print-none">
                     <div class="container-xl">
