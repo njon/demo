@@ -705,99 +705,112 @@ Sponsor
 					<div class="col-12">
 						<form class="card">
 							<div class="card-body">
-								<h3 class="card-title">Edit Profile</h3>
+								<h3 class="card-title">Create Company Account</h3>
 								<div class="row row-cards">
-									<div class="col-md-5">
+									<!-- Company Information -->
+									<div class="col-md-6">
 										<div class="mb-3">
 											<label class="form-label">Company</label>
-											<input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+											<input type="text" class="form-control" placeholder="Company Name" required>
+											<small class="form-hint">The official company name</small>
 										</div>
 									</div>
-									<div class="col-sm-6 col-md-3">
+
+									<!-- Department -->
+									<div class="col-md-6">
 										<div class="mb-3">
-											<label class="form-label">Username</label>
-											<input type="text" class="form-control" placeholder="Username" value="michael23">
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="mb-3">
-											<label class="form-label">Email address</label>
-											<input type="email" class="form-control" placeholder="Email">
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-6">
-										<div class="mb-3">
-											<label class="form-label">First Name</label>
-											<input type="text" class="form-control" placeholder="Company" value="Chet">
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-6">
-										<div class="mb-3">
-											<label class="form-label">Last Name</label>
-											<input type="text" class="form-control" placeholder="Last Name" value="Faker">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="mb-3">
-											<label class="form-label">Address</label>
-											<input type="text" class="form-control" placeholder="Home Address" value="Melbourne, Australia">
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="mb-3">
-											<label class="form-label">City</label>
-											<input type="text" class="form-control" placeholder="City" value="Melbourne">
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="mb-3">
-											<label class="form-label">Postal Code</label>
-											<input type="test" class="form-control" placeholder="ZIP Code">
-										</div>
-									</div>
-									<div class="col-md-5">
-										<div class="mb-3">
-											<label class="form-label">Country</label>
-											<select class="form-control form-select">
-												<option value="">Germany</option>
+											<label class="form-label">Department</label>
+											<select class="form-select" required>
+												<option value="">Select Department</option>
+												<option>Engineering</option>
+												<option>Sales</option>
+												<option>Marketing</option>
+												<option>Human Resources</option>
+												<option>Finance</option>
 											</select>
 										</div>
 									</div>
-									<div class="col-md-12 mb-3">
-										<label class="form-label">User Role</label>
-									 <div class="form-selectgroup">
-										 <label class="form-selectgroup-item">
-											 <input type="radio" name="icons" value="home" class="form-selectgroup-input" checked="">
-											 <span class="form-selectgroup-label">
-										 <!-- Download SVG icon from http://tabler.io/icons/icon/home -->
-										 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2" class="icon me-1 icon-3"> <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path> <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path> </svg> Viewer</span>
-										 </label>
-										 <label class="form-selectgroup-item">
-											 <input type="radio" name="icons" value="user" class="form-selectgroup-input">
-											 <span class="form-selectgroup-label">
-										 <!-- Download SVG icon from http://tabler.io/icons/icon/user -->
-										 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2" class="icon me-1 icon-3">
-									   <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
-									   <path d="M13.5 6.5l4 4"></path>
-									 </svg>Editor</span>
-										 </label>
-										 <label class="form-selectgroup-item">
-											 <input type="radio" name="icons" value="circle" class="form-selectgroup-input">
-											 <span class="form-selectgroup-label">
-										 <!-- Download SVG icon from http://tabler.io/icons/icon/circle -->
-										 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2" class="icon me-1 icon-3"> <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path> <path d="M16 19h6"></path> <path d="M19 16v6"></path> <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path> </svg>Admin</span>
-										 </label>
-										 
-									 </div>
-									 </div>
+
+									<!-- Employee Information -->
+									<div class="col-md-6">
+										<div class="mb-3">
+											<label class="form-label">Full Name</label>
+											<input type="text" class="form-control" placeholder="John Doe" required>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="mb-3">
+											<label class="form-label">Job Title</label>
+											<input type="text" class="form-control" placeholder="e.g., Software Engineer" required>
+										</div>
+									</div>
+
+									<!-- Contact Information -->
+									<div class="col-md-6">
+										<div class="mb-3">
+											<label class="form-label">Work Email</label>
+											<input type="email" class="form-control" placeholder="john@company.com" required>
+											<small class="form-hint">Must use company email domain</small>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="mb-3">
+											<label class="form-label">Work Phone</label>
+											<input type="tel" class="form-control" placeholder="+1 (555) 000-0000">
+										</div>
+									</div>
+
+									<!-- Access Control -->
+									<div class="col-md-12">
+										<div class="mb-3">
+											<label class="form-label">System Access Level</label>
+											<div class="form-selectgroup">
+												<label class="form-selectgroup-item">
+													<input type="radio" name="access-level" value="basic" class="form-selectgroup-input" checked>
+													<span class="form-selectgroup-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="icon me-1"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                                            Basic Access
+                                            <small class="form-hint d-block">View-only permissions</small>
+                                        </span>
+												</label>
+												<label class="form-selectgroup-item">
+													<input type="radio" name="access-level" value="editor" class="form-selectgroup-input">
+													<span class="form-selectgroup-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="icon me-1"><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path><path d="M13.5 6.5l4 4"></path></svg>
+                                            Editor Access
+                                            <small class="form-hint d-block">Create/edit content</small>
+                                        </span>
+												</label>
+												<label class="form-selectgroup-item">
+													<input type="radio" name="access-level" value="admin" class="form-selectgroup-input">
+													<span class="form-selectgroup-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="icon me-1"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M16 19h6"></path><path d="M19 16v6"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path></svg>
+                                            Admin Access
+                                            <small class="form-hint d-block">Full system privileges</small>
+                                        </span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<!-- Additional Options -->
+									<div class="col-md-12">
+										<div class="mb-3">
+											<label class="form-check">
+												<input class="form-check-input" type="checkbox">
+												<span class="form-check-label">Send welcome email with login instructions</span>
+											</label>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="card-footer text-end">
-								<button type="submit" class="btn btn-primary">Update Profile</button>
+								<div class="card-footer text-end">
+									<button type="submit" class="btn btn-primary">Create Account</button>
+								</div>
 							</div>
 						</form>
 					</div>
-					
 				</div>
 			</div>
 		</div>
