@@ -61,3 +61,12 @@ svg.steps-svg {
 .row.setup .card {
     cursor: pointer;
 }
+
+.card.notifications-data * {
+    font-size: 0.8rem;
+}
+
+.card.notifications-data th {text-transform: capitalize;font-weight: 500;}
+.card.notifications-data tr:hover {
+    background: #f6f6f6;
+}
