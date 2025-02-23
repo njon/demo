@@ -832,15 +832,15 @@ Sponsor
 								</div>
 								<div class="row">
 									<div class="col-md-6">
-										<div class="mb-5">
-											<label class="form-label">Phone Number</label>
-											<input type="tel" class="form-control" placeholder="Enter phone number">
+										<div class="mb-3">
+											<label class="form-label">Mobile Phone</label>
+											<input type="tel" name="phone" class="form-control" data-mask="+3\0 0000000000" data-mask-visible="true" placeholder="+3\0 (000) 000-0000" autocomplete="off">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="mb-5">
-											<label class="form-label">Email Address</label>
-											<input type="email" class="form-control" placeholder="Enter email address">
+											<label class="form-label" required>Email Address</label>
+											<input type="email" name="email" class="form-control" placeholder="example@email.com">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -852,7 +852,7 @@ Sponsor
 									<div class="col-md-6">
 										<div class="mb-5">
 											<label class="form-label">Website</label>
-											<input type="url" class="form-control" placeholder="Enter website URL">
+											<input type="url" class="form-control" placeholder="https://www.example.gr">
 										</div>
 									</div>
 								</div>
@@ -861,7 +861,7 @@ Sponsor
 								<div class="col-md-12">
 									<div class="mb-3">
 										<label class="form-label">Description</label>
-										<textarea rows="5" id="tinymce-mytextarea" class="form-control" placeholder="Enter business description"></textarea>
+										<textarea rows="5" id="tinymce-mytextarea" class="form-control" placeholder="Enter a concise summary of your business"></textarea>
 									</div>
 								</div>
 						
@@ -922,17 +922,15 @@ Sponsor
 
 					</div>
 					<div class="tab-pane" id="tabs-profile-3" role="tabpanel">
-						<h2 class="col-md-12 mt-3 mb-2">Working hours</h2>
-						<small class="form-hint mb-5 "><ul data-sourcepos="7:1-13:0"><li data-sourcepos="7:1-7:183"><strong>Enabling/Disabling Days:</strong> To completely disable a day, simply uncheck the checkbox next to the day's name. This means customers will not be able to book any services on that day.</li><li data-sourcepos="8:1-11:122"><strong>Setting Working Hours:</strong> When a day is enabled (checkbox checked), you can adjust the working hours using the slider bar.<ul data-sourcepos="9:5-11:122"><li data-sourcepos="9:5-9:54"><strong>Drag the left slider:</strong> Adjust the start time.</li><li data-sourcepos="10:5-10:53"><strong>Drag the right slider:</strong> Adjust the end time.</li><li data-sourcepos="11:5-11:122"><strong>Time Display:</strong> The selected start and end times are displayed next to the day's name in a 24-hour format (HH:MM).</li></ul></li></ul></small>
-						<div class="col-lg-6">
+						<h2 class="col-md-12 mt-3 mb-4">Working hours</h2>
+						<small class="form-hint mb-5 lh-lg"><ul data-sourcepos="7:1-13:0"><li data-sourcepos="7:1-7:183"><strong>Enabling/Disabling Days:</strong> To completely disable a day, simply uncheck the checkbox next to the day's name. This means customers will not be able to book any services on that day.</li><li data-sourcepos="8:1-11:122"><strong>Setting Working Hours:</strong> When a day is enabled (checkbox checked), you can adjust the working hours using the slider bar.<ul data-sourcepos="9:5-11:122"><li data-sourcepos="9:5-9:54"><strong>Drag the left slider:</strong> Adjust the start time.</li><li data-sourcepos="10:5-10:53"><strong>Drag the right slider:</strong> Adjust the end time.</li><li data-sourcepos="11:5-11:122"><strong>Time Display:</strong> The selected start and end times are displayed next to the day's name in a 24-hour format (HH:MM).</li></ul></li></ul></small>
 
+						<div class="col-lg-6">
 							<div id="working-hours" class="p-1">
 
 							</div>
 						</div>
-
 					</div>
-
 				</div>
 		</div>
 	</div>
