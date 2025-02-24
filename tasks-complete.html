@@ -14,8 +14,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 	<title>Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
 	<!-- CSS files -->
-	<link href="./dist/css/custom.css" rel="stylesheet"/>
-
 <link href="./dist/css/tabler.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-flags.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-socials.min.css?1738096684" rel="stylesheet"/>
@@ -23,8 +21,7 @@
 	<link href="./dist/css/tabler-vendors.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-marketing.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/demo.min.css?1738096684" rel="stylesheet"/>
-	<link href="./dist/libs/dropzone/dist/dropzone.css?1738448791" rel="stylesheet">
-
+	<link href="./dist/css/custom.css" rel="stylesheet"/>
 	<style>
 		@import url('https://rsms.me/inter/inter.css');
 	</style>
@@ -413,7 +410,7 @@ Sponsor
 				</span>
 			</a>
 		</li>
-		<li class="nav-item dropdown">
+		<li class="nav-item active dropdown">
 			<a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
 				<span class="nav-link-icon d-md-none d-lg-inline-block">
 	<!-- Download SVG icon from http://tabler.io/icons/icon/star -->
@@ -494,7 +491,7 @@ Sponsor
 						Settings
 						<span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
 					</a>
-					<a class="dropdown-item" href="./tasks.html">
+					<a class="dropdown-item active" href="./tasks.html">
 						Tasks
 						<span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
 					</a>
@@ -656,162 +653,265 @@ Sponsor
 	</header>
 	<div class="page-wrapper">
 <!-- Page header -->
+
 <div class="page-header d-print-none">
 	<div class="container-xl">
 		<div class="row g-2 align-items-center">
 			<div class="col">
-				<h2 class="page-title">
-					Add user
-				</h2>
+				<div class="page-pretitle">Business Management</div>
+				<h2 class="page-title">Quick business setup</h2>
+			</div>
+			
+			<div class="col-auto ms-auto d-print-none">
+				<div class="btn-list">
+					
+					<span class="d-none d-sm-inline">
+						<a href="#" class="btn btn-1">
+							<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+							Close</a>
+					</span>
+					<span class="d-none d-sm-inline">
+						<a href="#" class="btn btn-1">
+							<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
+							Duplicate
+						</a>
+					</span>
+					<span class="d-none d-sm-inline">
+						<a data-bs-toggle="modal" data-bs-target="#modal-first-steps" href="#" class="btn btn-primary btn-5 d-none d-sm-inline-block">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-checks"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 12l5 5l10 -10"></path><path d="M2 12l5 5m5 -5l5 -5"></path></svg>
+						Save &amp; Close</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal-blur fade" id="modal-first-steps" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-status bg-success"></div>
+					<div class="modal-body text-center py-4">
+						<!-- Download SVG icon from http://tabler.io/icons/icon/circle-check -->
+						<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon mb-2 icon-lg"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.501 20.93c-.866 .25 -1.914 -.166 -2.176 -1.247a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.074 .26 1.49 1.296 1.252 2.158" /><path d="M19 22v-6" /><path d="M22 19l-3 -3l-3 3" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+						<h3>
+							Welcome to Business setup guide
+						</h3>
+						<div class="text-secondary">
+							We're thrilled to help you get your venture off the ground. Setting up your business store and services is quick and easy – <b>it only takes a few minutes</b>. Just follow the four simple steps outlined below, and you'll be well on your way to running your business. Let's get started!
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="w-100">
+							<div class="row">
+								<div class="col">
+					<a href="#" class="btn btn-3 w-100" data-bs-dismiss="modal">
+					Start Setup
+					</a>
+				</div>
+
+				</div>
+			</div>
+		</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="page-body">
-	<div class="container-xl">
-		<div class="row row-cards">
-	
-	
-	
-	
-	
-			<div class="col-lg-3">
-				<div class="row row-cards">
-					<div class="col-12">
-						<div class="card">
-							<div class="card-header">
-								<h3 class="card-title">Profile picture</h3>
-							</div>
-							<div class="card-body">
-								<div class="row align-items-center">
-									<div class="col-md-12 mb-5">
-										<form id="dropzone-main" class="dropzone dropzone-avatar" action="./" autocomplete="off">
-											<div class="dz-message">
-												<span class="avatar avatar-xl" style="background-image: url(https://th.bing.com/th/id/OIG2.yJKX65L7iKMmSuK8LoUF?pid=ImgGn)"></span>
+		<!-- Page body -->
+		<div class="page-body">
+			<div class="container-xl">
+				<div class="row setup">
+					<div class="col-12 col-md-6 col-lg">
+						<h3 class="mb-3">Step 1: Add Your Store</h3>
+						<div class="mb-4">
+							<div class="row row-cards">
+								<div class="col-12">
+									<div class="card card-sm">
+										<div class="status-icons">
+											<div class="status-disabled-icon">
+												<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
 											</div>
-										</form>
-									</div>
-									<div class="col-md-6">
-										<a id="add-avatar" class="btn btn-1">
-										Change avatar
-										</a>
-									</div>
-									<div class="col-md-6">
-										<a href="#" class="btn btn-ghost-danger btn-3">
-										Delete avatar
-										</a>
+											<div class="status-enabled-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+											</div>
+										</div>
+										<div class="card-status-top"></div>
+											<div class="card-body">
+											
+											
+											<div class="">
+												<div class="row">
+													<div class="col">
+				<div class="card-body text-center">
+														<h5 class="mb-3">Add your first store
+				</h5>
+														<div class="dz-message">
+																<svg xmlns="http://www.w3.org/2000/svg" class="steps-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1" style="">
+												<path d="M3 21l18 0"></path>
+												<path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4"></path>
+												<path d="M5 21l0 -10.15"></path>
+												<path d="M19 21l0 -10.15"></path>
+												<path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
+											  </svg>
+																<h5 class="m-3 mb-2">Click on card to continue</h5>
+																<small class="text-muted">Click to be redirected to store page</small>
+															</div>
+													</div>
+													</div>
+													
+													
+													
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<script>
-									document.addEventListener("DOMContentLoaded", function () {
-										new Dropzone("#dropzone-main")
-									})
-								</script>
+								
+								
 							</div>
 						</div>
 					</div>
-					
-				</div>
-			</div>
-			<div class="col-lg-9">
-				<div class="row row-cards">
-					<div class="col-12">
-						<form class="card">
-							<div class="card-body">
-								<h3 class="card-title mb-5">User information</h3>
-								<div class="row row-cards">
-									<div class="col-md-6">
-										<div class="mb-3">
-											<label class="form-label">Full Name</label>
-											<input type="text" class="form-control" placeholder="John Doe" required>
-										</div>
+					<div class="col-12 col-md-6 col-lg">
+						<h3 class="mb-3">
+							Step 2: Add Your Services
+				
+						</h3>
+				<div class="mb-4">
+					<div class="row row-cards">
+						<div class="col-12">
+							<div class="card card-sm">
+							<div class="status-icons">
+									<div class="status-disabled-icon">
+										<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
 									</div>
-
-									<div class="col-md-6">
-										<div class="mb-3">
-											<label class="form-label">Job Title</label>
-											<input type="text" class="form-control" placeholder="e.g., Software Engineer" required>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="mb-3">
-											<label class="form-label">Work Email</label>
-											<input type="email" class="form-control" placeholder="john@company.com" required>
-											<small class="form-hint">This will be user's login name</small>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="mb-3">
-											<label class="form-label">Work Phone</label>
-											<input type="tel" class="form-control" placeholder="+1 (555) 000-0000">
-										</div>
-									</div>
-
-									<!-- Access Control -->
-									<div class="col-md-12">
-										<div class="mb-3">
-											<label class="form-label">System Access Level</label>
-											<div class="form-selectgroup">
-												<label class="form-selectgroup-item">
-													<input type="radio" name="access-level" value="basic" class="form-selectgroup-input" checked>
-													<span class="form-selectgroup-label text-start">
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" stroke-width="2"> <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path> <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path> </svg>
-														Basic Access
-                                            <small class="form-hint d-block">View-only permissions</small>
-                                        </span>
-												</label>
-												<label class="form-selectgroup-item">
-													<input type="radio" name="access-level" value="editor" class="form-selectgroup-input">
-													<span class="form-selectgroup-label text-start">
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="20" height="20" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"> <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path> <path d="M13.5 6.5l4 4"></path> <path d="M16 19h6"></path> <path d="M19 16v6"></path> </svg>                                            Editor Access
-                                            <small class="form-hint d-block">Create/edit content</small>
-                                        </span>
-												</label>
-												<label class="form-selectgroup-item">
-													<input type="radio" name="access-level" value="admin" class="form-selectgroup-input">
-													<span class="form-selectgroup-label text-start">
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" stroke-width="2"> <path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z"></path> <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z"></path> <path d="M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707"></path> </svg>                                            Admin Access
-                                            <small class="form-hint d-block">Full system privileges</small>
-                                        </span>
-												</label>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-md-12">
-										<div class="">
-											<div class="row">
-												<div class="col-auto">
-													<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler icons-tabler-outline icon-tabler-lock"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8 11v-4a4 4 0 1 1 8 0v4"></path></svg>
-												</div>
-												<div class="col">
-													<div class="mb-3">
-													<label class="form-label">Welcome email will be sent with login instructions</label>
-													<small class="form-hint">Password is automatically generated upon account creation and added in email message</small></div>
-												</div>
-											</div>
-										</div>
+									<div class="status-enabled-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
 									</div>
 								</div>
-								<div class="card-footer text-end">
-									<button type="submit" class="btn btn-primary">Create Account</button>
+								<div class="card-status-top"></div>
+									<div class="card-body">
+									<div class="row">
+										<div class="col">
+											<div class="card-body text-center">
+												<h5 class="mb-3">
+													Add your first store
+												</h5>
+												<div class="dz-message">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="steps-svg"><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5"></path><path d="M12 12l8 -4.5"></path><path d="M12 12l0 9"></path><path d="M12 12l-8 -4.5"></path><path d="M16 5.25l-8 4.5"></path></svg>
+													<h5 class="m-3 mb-2">Click on card to continue</h5>
+													<small class="text-muted">Click to be redirected to store page</small>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</form>
+						</div>
+						
+						
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>	
-</div>
-
-
-		</div>
-	</div>
-</div>
-			</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg">
+						<h3 class="mb-3">
+							Step 3: Configure Settings
+						</h3>
+				<div class="mb-4">
+					<div class="row row-cards">
+						<div class="col-12">
+							<div class="card card-sm">
+								<div class="status-icons">
+									<div class="status-disabled-icon">
+										<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+									</div>
+									<div class="status-enabled-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+									</div>
+								</div>
+								<div class="card-status-top"></div>
+									<div class="card-body">
+									
+									
+									<div class="">
+										<div class="row">
+											<div class="col">
+		<div class="card-body text-center">
+												<h5 class="mb-3">Add your first store
+		</h5>
+												<div class="dz-message">
+		<svg xmlns="http://www.w3.org/2000/svg" class="steps-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path> <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path> </svg>
+														<h5 class="m-3 mb-2">Click on card to continue</h5>
+														<small class="text-muted">Click to be redirected to store page</small>
+													</div>
+											</div>
+											</div>
+											
+											
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg disabled">
+				
+						<h3 class="mb-3">Step 4: Go Live!
+				
+				</h3>
+				<div class="mb-4">
+					<div class="row row-cards">
+						<div class="col-12">
+							<div class="card card-sm">
+								<div class="status-icons">
+									<div class="status-disabled-icon">
+										<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+									</div>
+									<div class="status-enabled-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+									</div>
+								</div>
+								<div class="card-status-top"></div>
+									<div class="card-body">
+									
+									
+									<div class="">
+										<div class="row">
+											<div class="col">
+		<div class="card-body text-center">
+												<h5 class="mb-3">Add your first store
+		</h5>
+												<div class="dz-message">
+														<svg xmlns="http://www.w3.org/2000/svg" class="steps-svg" viewBox="0 0 24 24" fill="none" width="24" height="24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor">
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+  <path d="M3.6 9h16.8"></path>
+  <path d="M3.6 15h16.8"></path>
+  <path d="M11.5 3a17 17 0 0 0 0 18"></path>
+  <path d="M12.5 3a17 17 0 0 1 0 18"></path>
+</svg>
+														<h5 class="m-3 mb-2">Click on card to continue</h5>
+														<small class="text-muted">Click to be redirected to store page</small>
+													</div>
+											</div>
+											</div>
+											
+											
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+					</div>
+				</div>
+							</div>
 		</div>
 		<footer class="footer footer-transparent d-print-none">
 	<div class="container-xl">
@@ -851,15 +951,13 @@ Sponsor
 </div>
 	<!-- Libs JS -->
 <!-- Tabler Core -->
-
-<script>
- document.getElementById('add-avatar').addEventListener('click', function() {
-            document.getElementById('dropzone-main').click();
-        });</script>
-<script src="./dist/libs/nouislider/dist/nouislider.min.js?1738096684" defer></script>
-<script src="./dist/js/custom.js" defer></script>
-<script src="./dist/libs/dropzone/dist/dropzone-min.js?1738448791" defer></script>
 <script src="./dist/js/tabler.min.js?1738096684" defer></script>
 <script src="./dist/js/demo.min.js?1738096684" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = new bootstrap.Modal('#modal-first-steps');
+  modal.show();
+});
+</script>
 </body>
 </html>

@@ -502,9 +502,9 @@
 
                                                         <div class="col-md-6">
                                                             <div class="mb-3">
-                                                                <label class="form-label">Availability</label>
+                                                                <label class="form-label">Stores</label>
                                                                 <select id="select-locations" class="form-select"
-                                                                        placeholder="Select locations..." multiple>
+                                                                        placeholder="Select stores" multiple>
                                                                     <option value="Online">Online</option>
                                                                     <option value="New York">New York</option>
                                                                     <option value="London">London</option>
@@ -610,7 +610,6 @@
             searchField: 'text',
             persist: true,
             maxItems: 10,
-            placeholder: 'Search or add categories...',
             render: {
                 item: function (data) {
                     return '<div class="bg-muted-lt me-1 ">' + data.text + '</div>';
@@ -625,7 +624,6 @@
         new TomSelect('#select-locations', {
             plugins: ['remove_button'],
             maxItems: 99,
-            placeholder: 'Select locations...',
             render: {
                 item: function (data) {
                     return '<div class="bg-muted-lt me-1 ">' + data.text + '</div>';

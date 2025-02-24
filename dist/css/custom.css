@@ -150,3 +150,40 @@ body .day-checkbox {
 .disabled .status-icons .status-disabled-icon {
     display: block;
 }
+table.table.card-table.table-vcenter.datatable * {
+    font-size: 0.8rem;
+}
+
+table.table.card-table.table-vcenter.datatable .table-col {
+    max-width: 150px;
+}
+table.table.card-table.table-vcenter.datatable .table-col:hover {
+    width: auto;
+    white-space: initial !important;
+}
+
+body .dropzone-avatar {
+    padding: 0 !important;!i;!;
+    border: 0 !important;!i;!;!;
+}
+
+body .dropzone-avatar .dz-preview {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body .dz-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+body .dropzone-avatar.dropzone .dz-preview .dz-image {
+    height: auto;
+    width: auto;
+}
+
+body .dropzone-avatar.dropzone .dz-message {
+    margin: 0;
+}
