@@ -14,16 +14,14 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 	<title>Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
 	<!-- CSS files -->
-	<link href="./dist/css/custom.css" rel="stylesheet"/>
-    <link href="./dist/libs/dropzone/dist/dropzone.css?1738448791" rel="stylesheet">
-
 <link href="./dist/css/tabler.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-flags.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-socials.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-payments.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-vendors.min.css?1738096684" rel="stylesheet"/>
 	<link href="./dist/css/tabler-marketing.min.css?1738096684" rel="stylesheet"/>
-<link href="./dist/css/demo.min.css?1738096684" rel="stylesheet"/>
+	<link href="./dist/css/demo.min.css?1738096684" rel="stylesheet"/>
+	<link href="./dist/css/custom.css" rel="stylesheet"/>
 	<style>
 		@import url('https://rsms.me/inter/inter.css');
 	</style>
@@ -412,7 +410,7 @@ Sponsor
 				</span>
 			</a>
 		</li>
-		<li class="nav-item dropdown">
+		<li class="nav-item active dropdown">
 			<a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
 				<span class="nav-link-icon d-md-none d-lg-inline-block">
 	<!-- Download SVG icon from http://tabler.io/icons/icon/star -->
@@ -493,7 +491,7 @@ Sponsor
 						Settings
 						<span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
 					</a>
-					<a class="dropdown-item" href="./tasks.html">
+					<a class="dropdown-item active" href="./tasks.html">
 						Tasks
 						<span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
 					</a>
@@ -655,306 +653,265 @@ Sponsor
 	</header>
 	<div class="page-wrapper">
 <!-- Page header -->
+
 <div class="page-header d-print-none">
 	<div class="container-xl">
 		<div class="row g-2 align-items-center">
 			<div class="col">
-				<!-- Page pre-title -->
-				<div class="page-pretitle">
-					Overview
-				</div>
-				<h2 class="page-title">
-					Combo layout
-				</h2>
+				<div class="page-pretitle">Business Management</div>
+				<h2 class="page-title">Quick business setup</h2>
 			</div>
-				
-									<div class="col-auto ms-auto d-print-none">
-										<div class="btn-list">
-						<span class="d-none d-sm-inline">
-					<a href="#" class="btn btn-1">
-					New view
-					</a>
-						</span>
-					<a href="#" class="btn btn-primary btn-5 d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
-						<!-- Download SVG icon from http://tabler.io/icons/icon/plus -->
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-2"><path d="M12 5l0 14"></path><path d="M5 12l14 0"></path></svg>
-					Create new report
-					</a>
-					<a href="#" class="btn btn-primary btn-6 d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
-						<!-- Download SVG icon from http://tabler.io/icons/icon/plus -->
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-2"><path d="M12 5l0 14"></path><path d="M5 12l14 0"></path></svg>
-					</a>
-					</div>
-					<div class="modal modal-blur fade" id="modal-report" tabindex="-1" role="dialog" aria-hidden="true">
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-						<h5 class="modal-title">New report</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<div class="mb-3">
-							<label class="form-label">Name</label>
-							<input type="text" class="form-control" name="example-text-input" placeholder="Your report name">
-						</div>
-						<label class="form-label">Report type</label>
-						<div class="form-selectgroup-boxes row mb-3">
-							<div class="col-lg-6">
-								<label class="form-selectgroup-item">
-									<input type="radio" name="report-type" value="1" class="form-selectgroup-input" checked="">
-									<span class="form-selectgroup-label d-flex align-items-center p-3">
-										<span class="me-3">
-											<span class="form-selectgroup-check"></span>
-										</span>
-										<span class="form-selectgroup-label-content">
-											<span class="form-selectgroup-title strong mb-1">Simple</span>
-											<span class="d-block text-secondary">Provide only basic data needed for the report</span>
-										</span>
-									</span>
-								</label>
-							</div>
-							<div class="col-lg-6">
-								<label class="form-selectgroup-item">
-									<input type="radio" name="report-type" value="1" class="form-selectgroup-input">
-									<span class="form-selectgroup-label d-flex align-items-center p-3">
-										<span class="me-3">
-											<span class="form-selectgroup-check"></span>
-										</span>
-										<span class="form-selectgroup-label-content">
-											<span class="form-selectgroup-title strong mb-1">Advanced</span>
-											<span class="d-block text-secondary">Insert charts and additional advanced analyses to be inserted in the report</span>
-										</span>
-									</span>
-								</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-8">
-								<div class="mb-3">
-									<label class="form-label">Report url</label>
-									<div class="input-group input-group-flat">
-						<span class="input-group-text">
-								https://tabler.io/reports/
-						</span>
-						<input type="text" class="form-control ps-0" value="report-01" autocomplete="off">
-					</div>
-								</div>
-							</div>
-							<div class="col-lg-4">
-								<div class="mb-3">
-									<label class="form-label">Visibility</label>
-									<select class="form-select">
-										<option value="1" selected="">Private</option>
-										<option value="2">Public</option>
-										<option value="3">Hidden</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="mb-3">
-									<label class="form-label">Client name</label>
-									<input type="text" class="form-control">
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="mb-3">
-									<label class="form-label">Reporting period</label>
-									<input type="date" class="form-control">
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div>
-									<label class="form-label">Additional information</label>
-									<textarea class="form-control" rows="3"></textarea>
-								</div>
-							</div>
+			
+			<div class="col-auto ms-auto d-print-none">
+				<div class="btn-list">
+					
+					<span class="d-none d-sm-inline">
+						<a href="#" class="btn btn-1">
+							<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+							Close</a>
+					</span>
+					<span class="d-none d-sm-inline">
+						<a href="#" class="btn btn-1">
+							<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
+							Duplicate
+						</a>
+					</span>
+					<span class="d-none d-sm-inline">
+						<a data-bs-toggle="modal" data-bs-target="#modal-first-steps" href="#" class="btn btn-primary btn-5 d-none d-sm-inline-block">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-checks"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 12l5 5l10 -10"></path><path d="M2 12l5 5m5 -5l5 -5"></path></svg>
+						Save &amp; Close</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal-blur fade" id="modal-first-steps" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-status bg-success"></div>
+					<div class="modal-body text-center py-4">
+						<!-- Download SVG icon from http://tabler.io/icons/icon/circle-check -->
+						<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon mb-2 icon-lg"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.501 20.93c-.866 .25 -1.914 -.166 -2.176 -1.247a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.074 .26 1.49 1.296 1.252 2.158" /><path d="M19 22v-6" /><path d="M22 19l-3 -3l-3 3" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+						<h3>
+							Welcome to Business setup guide
+						</h3>
+						<div class="text-secondary">
+							We're thrilled to help you get your venture off the ground. Setting up your business store and services is quick and easy – <b>it only takes a few minutes</b>. Just follow the four simple steps outlined below, and you'll be well on your way to running your business. Let's get started!
 						</div>
 					</div>
 					<div class="modal-footer">
-					<a href="#" class="btn btn-link link-secondary btn-3" data-bs-dismiss="modal">
-					Cancel
+						<div class="w-100">
+							<div class="row">
+								<div class="col">
+					<a href="#" class="btn btn-3 w-100" data-bs-dismiss="modal">
+					Start Setup
 					</a>
-					<a href="#" class="btn btn-primary btn-5 ms-auto" data-bs-dismiss="modal">
-						<!-- Download SVG icon from http://tabler.io/icons/icon/plus -->
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-2"><path d="M12 5l0 14"></path><path d="M5 12l14 0"></path></svg>
-					Create new report
-					</a>
-					</div>
-							</div>
-						</div>
-					</div>
 				</div>
+
+				</div>
+			</div>
+		</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 		<!-- Page body -->
 		<div class="page-body">
 			<div class="container-xl">
-<div class="card p-5">
-	<div class="row">
-		<div class="col-12">
-			<div class="card-body">
-				<div class="tab-content">
-					<div class="card-header no-border">
-						<ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
-							<li class="nav-item" role="presentation">
-								<a href="#tabs-home-3" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab">
-									<!-- Download SVG icon from http://tabler.io/icons/icon/home -->
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon me-2 icon-2">
-										<path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
-										<path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
-										<path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
-									</svg>
-									Business information</a>
-							</li>
-							<li class="nav-item" role="presentation">
-								<a href="#tabs-profile-3" class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2 icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M12 7v5l3 3"></path></svg>
-									Working Hours</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="tab-pane active show" id="tabs-home-3" role="tabpanel">
-						<h2 class="col-md-12 mb-5 mt-3">Business information</h2>
-						<div class="row">
-						<div class="col-md-8">
-							<form>
-							<div class="col-md-12">
-									<div class="mb-5">
-										<label class="form-label">Business Name</label>
-										<input type="text" class="form-control" placeholder="Enter business name">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="mb-3">
-											<label class="form-label">Mobile Phone</label>
-											<input type="tel" name="phone" class="form-control" data-mask="+3\0 0000000000" data-mask-visible="true" placeholder="+3\0 (000) 000-0000" autocomplete="off">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="mb-5">
-											<label class="form-label" required>Email Address</label>
-											<input type="email" name="email" class="form-control" placeholder="example@email.com">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="mb-5">
-											<label class="form-label">Business Address</label>
-											<input type="text" class="form-control" placeholder="Enter business address">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="mb-5">
-											<label class="form-label">Website</label>
-											<input type="url" class="form-control" placeholder="https://www.example.gr">
-										</div>
-									</div>
-								</div>
-
-							
-								<div class="col-md-12">
-									<div class="mb-3">
-										<label class="form-label">Description</label>
-										<textarea rows="5" id="tinymce-mytextarea" class="form-control" placeholder="Enter a concise summary of your business"></textarea>
-									</div>
-								</div>
-						
-								<input type="hidden" id="working-hours-json">
-								</form>
-								</div>
-
-								<div class="col-md-4">
-									<div class="sticky-top" style="top: 20px">
-										<label class="form-label">Store Images</label>		
-										<!-- Main Image Upload -->
-										<div class="card mb-4">
-											<div class="card-body">
-												<h5 class="mb-3">Featured Image</h5>
-												<form class="dropzone" id="dropzone-main" action="./" autocomplete="off">
-		
-													<div class="dz-message">
-														<i class="ti ti-cloud-upload display-4 text-muted mb-3"></i>
-														<h5>Drag & drop or click to upload</h5>
-														<small class="text-muted">Recommended size: 1200x800px</small>
-													</div>
-												</form>
-												<script>
-													document.addEventListener("DOMContentLoaded", function () {
-														new Dropzone("#dropzone-main")
-													})
-												</script>
+				<div class="row setup">
+					<div class="col-12 col-md-6 col-lg">
+						<h3 class="mb-3">Step 1: Add Your Store</h3>
+						<div class="mb-4">
+							<div class="row row-cards">
+								<div class="col-12">
+									<div class="card card-sm">
+										<div class="status-icons">
+											<div class="status-disabled-icon">
+												<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+											</div>
+											<div class="status-enabled-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
 											</div>
 										</div>
-		
-		
-										<!-- Gallery Upload -->
-										<div class="card">
+										<div class="card-status-top"></div>
 											<div class="card-body">
-												<h5 class="mb-3">Gallery Images</h5>
-												<form class="dropzone" id="dropzone-extra" action="./" autocomplete="off"
-													novalidate>
-													<div class="fallback input-hidden" style="display:none;">
-														<input name="file" type="file"/>
+											
+											
+											<div class="">
+												<div class="row">
+													<div class="col">
+				<div class="card-body text-center">
+														<h5 class="mb-3">Add your first store
+				</h5>
+														<div class="dz-message">
+																<svg xmlns="http://www.w3.org/2000/svg" class="steps-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="1" style="">
+												<path d="M3 21l18 0"></path>
+												<path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4"></path>
+												<path d="M5 21l0 -10.15"></path>
+												<path d="M19 21l0 -10.15"></path>
+												<path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
+											  </svg>
+																<h5 class="m-3 mb-2">Click on card to continue</h5>
+																<small class="text-muted">Click to be redirected to store page</small>
+															</div>
 													</div>
-													<div class="dz-message">
-														<i class="ti ti-photo display-4 text-muted mb-3"></i>
-														<h5>Drag & drop or click to upload</h5>
-														<small class="text-muted">Maximum 5 images</small>
 													</div>
-												</form>
-												<script>
-													document.addEventListener("DOMContentLoaded", function () {
-														new Dropzone("#dropzone-extra")
-													})
-												</script>
+													
+													
+													
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-
-
-					</div>
-					<div class="tab-pane" id="tabs-profile-3" role="tabpanel">
-						<h2 class="col-md-12 mt-3 mb-4">Working hours</h2>
-						<small class="form-hint mb-5 lh-lg"><ul data-sourcepos="7:1-13:0"><li data-sourcepos="7:1-7:183"><strong>Enabling/Disabling Days:</strong> To completely disable a day, simply uncheck the checkbox next to the day's name. This means customers will not be able to book any services on that day.</li><li data-sourcepos="8:1-11:122"><strong>Setting Working Hours:</strong> When a day is enabled (checkbox checked), you can adjust the working hours using the slider bar.<ul data-sourcepos="9:5-11:122"><li data-sourcepos="9:5-9:54"><strong>Drag the left slider:</strong> Adjust the start time.</li><li data-sourcepos="10:5-10:53"><strong>Drag the right slider:</strong> Adjust the end time.</li><li data-sourcepos="11:5-11:122"><strong>Time Display:</strong> The selected start and end times are displayed next to the day's name in a 24-hour format (HH:MM).</li></ul></li></ul></small>
-
-						<div class="col-lg-6">
-							<div id="working-hours" class="p-1">
-
+								
+								
 							</div>
 						</div>
 					</div>
+					<div class="col-12 col-md-6 col-lg">
+						<h3 class="mb-3">
+							Step 2: Add Your Services
+				
+						</h3>
+				<div class="mb-4">
+					<div class="row row-cards">
+						<div class="col-12">
+							<div class="card card-sm">
+							<div class="status-icons">
+									<div class="status-disabled-icon">
+										<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+									</div>
+									<div class="status-enabled-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+									</div>
+								</div>
+								<div class="card-status-top"></div>
+									<div class="card-body">
+									<div class="row">
+										<div class="col">
+											<div class="card-body text-center">
+												<h5 class="mb-3">
+													Add your first store
+												</h5>
+												<div class="dz-message">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="steps-svg"><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5"></path><path d="M12 12l8 -4.5"></path><path d="M12 12l0 9"></path><path d="M12 12l-8 -4.5"></path><path d="M16 5.25l-8 4.5"></path></svg>
+													<h5 class="m-3 mb-2">Click on card to continue</h5>
+													<small class="text-muted">Click to be redirected to store page</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
 				</div>
-		</div>
-	</div>
-	<div class="card-footer bg-transparent mt-auto">
-		<div class="btn-list justify-content-end">
-			<a href="#" class="btn btn-1">
-			Cancel
-			</a>
-			<a href="#" class="btn btn-primary btn-2">
-			Submit
-			</a>
-		</div>
-	</div>
-</div>
-		
-
-
-
-</div>
-
-		</div>
-	</div>
-</div>
-			</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg">
+						<h3 class="mb-3">
+							Step 3: Configure Settings
+						</h3>
+				<div class="mb-4">
+					<div class="row row-cards">
+						<div class="col-12">
+							<div class="card card-sm">
+								<div class="status-icons">
+									<div class="status-disabled-icon">
+										<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+									</div>
+									<div class="status-enabled-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+									</div>
+								</div>
+								<div class="card-status-top"></div>
+									<div class="card-body">
+									
+									
+									<div class="">
+										<div class="row">
+											<div class="col">
+		<div class="card-body text-center">
+												<h5 class="mb-3">Add your first store
+		</h5>
+												<div class="dz-message">
+		<svg xmlns="http://www.w3.org/2000/svg" class="steps-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path> <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path> </svg>
+														<h5 class="m-3 mb-2">Click on card to continue</h5>
+														<small class="text-muted">Click to be redirected to store page</small>
+													</div>
+											</div>
+											</div>
+											
+											
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg disabled">
+				
+						<h3 class="mb-3">Step 4: Go Live!
+				
+				</h3>
+				<div class="mb-4">
+					<div class="row row-cards">
+						<div class="col-12">
+							<div class="card card-sm">
+								<div class="status-icons">
+									<div class="status-disabled-icon">
+										<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+									</div>
+									<div class="status-enabled-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+									</div>
+								</div>
+								<div class="card-status-top"></div>
+									<div class="card-body">
+									
+									
+									<div class="">
+										<div class="row">
+											<div class="col">
+		<div class="card-body text-center">
+												<h5 class="mb-3">Add your first store
+		</h5>
+												<div class="dz-message">
+														<svg xmlns="http://www.w3.org/2000/svg" class="steps-svg" viewBox="0 0 24 24" fill="none" width="24" height="24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor">
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+  <path d="M3.6 9h16.8"></path>
+  <path d="M3.6 15h16.8"></path>
+  <path d="M11.5 3a17 17 0 0 0 0 18"></path>
+  <path d="M12.5 3a17 17 0 0 1 0 18"></path>
+</svg>
+														<h5 class="m-3 mb-2">Click on card to continue</h5>
+														<small class="text-muted">Click to be redirected to store page</small>
+													</div>
+											</div>
+											</div>
+											
+											
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+					</div>
+				</div>
+							</div>
 		</div>
 		<footer class="footer footer-transparent d-print-none">
 	<div class="container-xl">
@@ -994,14 +951,13 @@ Sponsor
 </div>
 	<!-- Libs JS -->
 <!-- Tabler Core -->
-<script src="./dist/libs/nouislider/dist/nouislider.min.js?1738096684" defer></script>
-<script src="./dist/libs/tinymce/tinymce.min.js?1738448791" defer></script>
-<script>
-	var timeObject = {"monday":{"disabled":true},"tuesday":{"start":600,"end":1320},"wednesday":{"start":600,"end":1320},"thursday":{"start":495,"end":1320},"friday":{"start":495,"end":1320},"saturday":{"start":495,"end":1320},"sunday":{"start":495,"end":1320}};
-</script>
-<script src="./dist/js/custom.js" defer></script>
-<script src="./dist/libs/dropzone/dist/dropzone-min.js?1738448791" defer></script>
 <script src="./dist/js/tabler.min.js?1738096684" defer></script>
 <script src="./dist/js/demo.min.js?1738096684" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = new bootstrap.Modal('#modal-first-steps');
+  modal.show();
+});
+</script>
 </body>
 </html>

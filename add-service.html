@@ -375,14 +375,30 @@
             <div class="container-xl">
                 <div class="row g-2 align-items-center">
                     <div class="col">
-                        <!-- Page pre-title -->
-
-                        <h2 class="page-title">
-                            Services
-                        </h2>
-                    </div>
-
-
+            <div class="page-pretitle">Services Management</div>
+            <h2 class="page-title">Add New Service</h2>
+        </div>
+        <div class="col-auto ms-auto d-print-none">
+            <div class="btn-list">
+                
+                <span class="d-none d-sm-inline">
+                    <a href="#" class="btn btn-1">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                        Close</a>
+                </span>
+                <span class="d-none d-sm-inline">
+                    <a href="#" class="btn btn-1">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
+                        Duplicate
+                    </a>
+                </span>
+                <span class="d-none d-sm-inline">
+                    <a href="#" class="btn btn-primary btn-5 d-none d-sm-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-checks"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 12l5 5l10 -10"></path><path d="M2 12l5 5m5 -5l5 -5"></path></svg>
+                    Save &amp; Close</a>
+                </span>
+            </div>
+        </div>
                 </div>
             </div>
         </div>
@@ -391,132 +407,131 @@
             <div class="container-xl">
                 <div class="row">
                     <div class="col-12">
-                        <form class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <!-- Left Column - Service Details -->
-                                    <div class="col-md-8">
-                                        <div class="mb-4">
-                                            <h2 class="mb-4">Service Details</h2>
-
-                                            <!-- Basic Information Section -->
+                            <div class="card p-4">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <!-- Left Column - Service Details -->
+                                        <h2 class="col-md-12 mb-5">Fill service details</h2>
+                                        <div class="col-md-8">
                                             <div class="mb-4">
-                                                <div class="mb-3">
-                                                    <label class="form-label required">Service Title</label>
-                                                    <input type="text" class="form-control form-control-lg"
-                                                           placeholder="e.g., Professional Website Design" required>
-                                                    <small class="form-hint">Keep it clear and descriptive</small>
+
+                                                <!-- Basic Information Section -->
+                                                <div class="mb-4">
+                                                    <div class="mb-3">
+                                                        <label class="form-label required">Service Title</label>
+                                                        <input type="text" class="form-control form-control-lg"
+                                                                placeholder="e.g., Professional Website Design" required>
+                                                        <small class="form-hint">Keep it clear and descriptive</small>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label required">Service Description</label>
+                                                        <textarea rows="6" class="form-control" id="tinymce-mytextarea"
+                                                                    placeholder="Describe your service in detail"></textarea>
+                                                    </div>
                                                 </div>
 
-                                                <div class="mb-3">
-                                                    <label class="form-label required">Service Description</label>
-                                                    <textarea rows="6" class="form-control" id="tinymce-mytextarea"
-                                                              placeholder="Describe your service in detail"></textarea>
-                                                </div>
-                                            </div>
+                                                <!-- Pricing & Availability Section -->
+                                                <div class="mb-4">
+                                                    <h4 class="mb-3">Pricing & Availability</h4>
+                                                    <div class="row g-3">
+                                                        <div class="col-md-4">
+                                                            <div class="mb-3">
+                                                                <label class="form-label required">Service Price</label>
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text">€</span>
+                                                                    <input type="number" class="form-control"
+                                                                            placeholder="0.00" step="1" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-                                            <!-- Pricing & Availability Section -->
-                                            <div class="mb-4">
-                                                <h4 class="mb-3">Pricing & Availability</h4>
-                                                <div class="row g-3">
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label class="form-label required">Service Price</label>
-                                                            <div class="input-group">
-                                                                <span class="input-group-text">€</span>
-                                                                <input type="number" class="form-control"
-                                                                       placeholder="0.00" step="1" required>
+                                                        <div class="col-md-4">
+                                                            <div class="mb-3">
+                                                                <label class="form-label required">Length of service (minutes)</label>
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text">
+                                                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg>
+                                                                    </span>
+                                                                    <input type="number" id="to-time" class="form-control" step="1" placeholder="Length in minutes"
+                                                                            required>
+                                                                </div>
+                                                                <small class="form-hint">Length of service now is <span class="transform-to-hour">0 minutes</span></small>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Participants</label>
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text ps-2 pe-2"><svg
+                                                                            xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                            height="20" viewBox="0 0 24 24" fill="none"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round" stroke-linejoin="round"><path
+                                                                            d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle
+                                                                            cx="12" cy="7" r="4"></circle></svg></span>
+                                                                    <input type="number" class="form-control"
+                                                                            placeholder="Max participants">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
 
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label class="form-label required">Length of service (minutes)</label>
-                                                            <div class="input-group">
-                                                                <span class="input-group-text">
-                                                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg>
-                                                                </span>
-                                                                <input type="number" id="to-time" class="form-control" step="1" placeholder="Length in minutes"
-                                                                       required>
+                                                <!-- Categorization Section -->
+                                                <div class="mb-4">
+                                                    <h4 class="mb-3">Categorization</h4>
+                                                    <div class="row g-3">
+                                                        <div class="col-md-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Service Categories</label>
+                                                                <select id="select-categories" class="form-select"
+                                                                        placeholder="Search or add categories..." multiple>
+                                                                    <option value="Web Development">Web Development</option>
+                                                                    <option value="Graphic Design">Graphic Design</option>
+                                                                    <option value="Digital Marketing">Digital Marketing
+                                                                    </option>
+                                                                    <option value="SEO">SEO</option>
+                                                                    <option value="Content Writing">Content Writing</option>
+                                                                </select>
+                                                                <small class="form-hint">Start typing to search existing
+                                                                    categories</small>
                                                             </div>
-                                                            <small class="form-hint">Length of service now is <span class="transform-to-hour">0 minutes</span></small>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label class="form-label">Participants</label>
-                                                            <div class="input-group">
-                                                                <span class="input-group-text ps-2 pe-2"><svg
-                                                                        xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                        height="20" viewBox="0 0 24 24" fill="none"
-                                                                        stroke="currentColor" stroke-width="2"
-                                                                        stroke-linecap="round" stroke-linejoin="round"><path
-                                                                        d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle
-                                                                        cx="12" cy="7" r="4"></circle></svg></span>
-                                                                <input type="number" class="form-control"
-                                                                       placeholder="Max participants">
+                                                        <div class="col-md-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Stores</label>
+                                                                <select id="select-locations" class="form-select"
+                                                                        placeholder="Select stores" multiple>
+                                                                    <option value="Online">Online</option>
+                                                                    <option value="New York">New York</option>
+                                                                    <option value="London">London</option>
+                                                                    <option value="Remote">Remote</option>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <!-- Categorization Section -->
-                                            <div class="mb-4">
-                                                <h4 class="mb-3">Categorization</h4>
-                                                <div class="row g-3">
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label">Service Categories</label>
-                                                            <select id="select-categories" class="form-select"
-                                                                    placeholder="Search or add categories..." multiple>
-                                                                <option value="Web Development">Web Development</option>
-                                                                <option value="Graphic Design">Graphic Design</option>
-                                                                <option value="Digital Marketing">Digital Marketing
-                                                                </option>
-                                                                <option value="SEO">SEO</option>
-                                                                <option value="Content Writing">Content Writing</option>
-                                                            </select>
-                                                            <small class="form-hint">Start typing to search existing
-                                                                categories</small>
-                                                        </div>
+                                                <!-- Additional Information -->
+                                                <div class="mb-4">
+                                                    <h4 class="mb-3">Additional Details</h4>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Exclusions (Optional)</label>
+                                                        <textarea rows="3" class="form-control"
+                                                                    placeholder="List items not included in this service"></textarea>
                                                     </div>
-
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label">Availability</label>
-                                                            <select id="select-locations" class="form-select"
-                                                                    placeholder="Select locations..." multiple>
-                                                                <option value="Online">Online</option>
-                                                                <option value="New York">New York</option>
-                                                                <option value="London">London</option>
-                                                                <option value="Remote">Remote</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Additional Information -->
-                                            <div class="mb-4">
-                                                <h4 class="mb-3">Additional Details</h4>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Exclusions (Optional)</label>
-                                                    <textarea rows="3" class="form-control"
-                                                              placeholder="List items not included in this service"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                         </form>
 
                         <!-- Right Column - Media Upload -->
                         <div class="col-md-4">
                             <div class="sticky-top" style="top: 20px">
-                                <h4 class="mb-4">Media</h4>
-
+                                <label class="form-label">Service Images</label>
                                 <!-- Main Image Upload -->
                                 <div class="card mb-4">
                                     <div class="card-body">
@@ -541,7 +556,7 @@
                                 <!-- Gallery Upload -->
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="mb-3">Supporting Images</h5>
+                                        <h5 class="mb-3">Gallery Images</h5>
                                         <form class="dropzone" id="dropzone-extra" action="./" autocomplete="off"
                                               novalidate>
                                             <div class="fallback input-hidden" style="display:none;">
@@ -563,6 +578,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
 
                     <!-- Form Footer -->
                     <div class="card-footer bg-transparent mt-4">
@@ -593,7 +610,6 @@
             searchField: 'text',
             persist: true,
             maxItems: 10,
-            placeholder: 'Search or add categories...',
             render: {
                 item: function (data) {
                     return '<div class="bg-muted-lt me-1 ">' + data.text + '</div>';
@@ -608,7 +624,6 @@
         new TomSelect('#select-locations', {
             plugins: ['remove_button'],
             maxItems: 99,
-            placeholder: 'Select locations...',
             render: {
                 item: function (data) {
                     return '<div class="bg-muted-lt me-1 ">' + data.text + '</div>';
@@ -619,32 +634,6 @@
 </script>
 <!-- Libs JS -->
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let options = {
-            selector: '#tinymce-mytextarea',
-            height: 300,
-            menubar: false,
-            statusbar: false,
-            license_key: 'gpl',
-            plugins: [
-                'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview', 'anchor',
-                'searchreplace', 'visualblocks', 'code', 'fullscreen',
-                'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
-            ],
-            toolbar: 'undo redo | formatselect | ' +
-                'bold italic backcolor | alignleft aligncenter ' +
-                'alignright alignjustify | bullist numlist outdent indent | ' +
-                'removeformat',
-            content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; }'
-        }
-        if (localStorage.getItem("tablerTheme") === 'dark') {
-            options.skin = 'oxide-dark';
-            options.content_css = 'dark';
-        }
-        tinyMCE.init(options);
-    })
-</script>
 <script src="./dist/libs/dropzone/dist/dropzone-min.js?1738448791" defer></script>
 <script src="./dist/libs/tinymce/tinymce.min.js?1738448791" defer></script>
 <script src="./dist/libs/tom-select/dist/js/tom-select.complete.min.js" defer></script>
@@ -655,15 +644,7 @@
 <!-- Tabler Core -->
 <script src="./dist/js/tabler.min.js?1738096685" defer=""></script>
 <script src="./dist/js/demo.min.js?1738096685" defer=""></script>
-<script>
-    document.getElementById('to-time').addEventListener('input', function() {
-        const minutes = parseInt(this.value) || 0;
-        const hours = Math.floor(minutes / 60);
-        const remainingMinutes = minutes % 60;
-        document.querySelector('.transform-to-hour').textContent =
-            `${hours}h ${remainingMinutes}m`.replace('0h ', '').replace(' 0m', '');
-    });
-</script>
+<script src="./dist/js/custom.js" defer=""></script>
 
 
 </body>
