@@ -41,7 +41,7 @@ a.nav-link {
 }
 
 .card:hover {
-    box-shadow: 0 0 4px 0px #8b87d4;
+    border-color: #e5e5e5;
 }
 
 img.card-img-top {
@@ -207,4 +207,10 @@ body table.table th {
     font-size: 0.8rem !important;
     font-weight: 600;
     text-transform: none;
+}
+a.dropdown-toggle.text-secondary {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4b6d8b !important;
 }
