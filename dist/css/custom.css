@@ -200,3 +200,9 @@ body .dropzone-avatar.dropzone .dz-message {
     font-weight: 400;
     margin-top: 0.3rem;
 }
+
+body table.table th {
+    font-size: 0.8rem !important;!i;!;!o;!;
+    font-weight: 600;
+    text-transform: none;
+}
